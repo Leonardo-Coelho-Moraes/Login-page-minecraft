@@ -1,0 +1,115 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    margin-top: 26px;
+    gap: 60px;
+    margin-bottom: 32px;
+}
+.logo{
+   
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+.logo h1{
+    color: #fff;
+    font: 700 normal 2em/46px Poppins;
+    user-select: none;
+}
+
+.header ul{
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    align-items: center;
+}
+.header ul li{
+    list-style: none;
+    
+}
+.header ul>button{
+    display: flex;
+justify-content: center;
+align-items: center;
+width: 135px;
+height: 35px;
+background: rgba(255, 255, 255, 0.16);
+backdrop-filter: blur(2.5px);
+border-radius: 6px;
+border: none;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.header>ul button>a{
+    
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font: 600 normal 1em/15px Kufam;
+    color: #33E29A;
+
+}
+.header>ul li>a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 600 normal 1em/15px Kufam;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    
+    
+}
+.header>ul li>a:hover{
+    animation-iteration-count: 1;
+    animation-duration: 0s;
+    animation-name: muda;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+.header>ul li>a:hover::after{
+    position:absolute ;
+    top: 18px;
+    content: '';
+    display: flex;
+   
+    height: 1.4px;
+   
+    align-self: center;
+    animation: links 0.3s 1 ease-in forwards;
+}
+@keyframes links {
+    0%{
+      width: 0%; 
+      background-color: white; 
+    }
+    100%{
+        width: 80%;  
+        background-color: #33E29A;
+      }
+}
+
+@keyframes muda {
+    0%{
+
+      color: white; 
+    }
+    100%{
+     
+        color: #33E29A;
+      }
+
+    }

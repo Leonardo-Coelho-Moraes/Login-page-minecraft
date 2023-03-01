@@ -1,0 +1,31 @@
+.footer{
+    padding-bottom: 26px;
+}
+.footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer ul li a>svg{
+    color: white;
+    width: 22px;
+    height: 22px;
+}
+.footer ul li>a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1em;
+    flex-direction: column;
+}
+.footer ul li a>h2{
+
+    color: white;
+    font: 400 normal 12px/16px Kufam;
+}
