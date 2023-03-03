@@ -9,6 +9,15 @@
 }
 .footer ul li{
     list-style: none;
+    padding: 6px 3px;
+  
+    
+}
+.footer ul li:hover{
+    background-color: rgba(0, 0, 0, 0.211);
+    border-radius: 6px;
+    backdrop-filter: blur(4px);
+    transition: background-color 0.3s ease;
 }
 .footer ul li a>svg{
     color: white;
@@ -23,6 +32,7 @@
     text-align: center;
     gap: 1em;
     flex-direction: column;
+    cursor: auto;
 }
 .footer ul li a>h2{
 
