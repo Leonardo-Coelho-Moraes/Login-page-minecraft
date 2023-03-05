@@ -1,8 +1,12 @@
-import React from 'react'
+import { React, useState} from 'react'
 import Logo from '../imgs/logo.png'
 import Style from '../styles/Navbar.module.css'
 import Ripples from 'react-ripples'
 const Navbar = () => {
+  const [IsMenuActive, setIsMenuActive] = useState(true)
+
+  
+
   return (
     <>
     <header className={Style.header}>
@@ -10,7 +14,7 @@ const Navbar = () => {
       <img src={Logo} alt="Logo Mine" /> <h1>MINE</h1>
       
     </a>
-    <ul>
+    <ul className={` ${!IsMenuActive? 'active' : ''}`}>
         
         <li><a href='#'>
           Fórum</a></li>
@@ -24,6 +28,11 @@ const Navbar = () => {
             <button>Entrar</button>
           </Ripples>
       </ul>
+      <div className={`mobile-menu ${!IsMenuActive? 'active' : ''}`} onClick={() => {!IsMenuActive? setIsMenuActive(true) : setIsMenuActive(false)}}>
+      <div className='line1'></div>
+      <div className='line2'></div>
+      <div className='line3'></div>
+      </div>
     </header>
     
     </>
