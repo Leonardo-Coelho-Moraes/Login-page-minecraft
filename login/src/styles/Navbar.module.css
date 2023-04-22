@@ -4,11 +4,13 @@ header{
     justify-content: center;
     width: 100vw;
     position: relative;
-    margin-top: 26px;
+  
     gap: 60px;
-    margin-bottom: 83px;
+    height: 150px;
+    
 
 }
+
 .logo{
    
     display: flex;
@@ -85,9 +87,7 @@ text-decoration: none;
     top: 18px;
     content: '';
     display: flex;
-   
     height: 1.4px;
-   
     align-self: center;
     animation: links 0.3s 1 ease-in forwards;
 }

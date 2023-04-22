@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-    <header className={Style.header}>
+    <header className={`header ${Style.header} ${!IsMenuActive? 'active' : ''}`}>
     <a href='#' className={Style.logo}>
       <img src={Logo} alt="Logo Mine" /> <h1>MINE</h1>
       

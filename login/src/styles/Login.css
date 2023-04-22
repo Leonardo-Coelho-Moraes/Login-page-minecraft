@@ -9,13 +9,13 @@ border-radius: 12px;
 color: white;
 display: flex;
 align-items: center;
+overflow-y: hidden;
 justify-content: center;
+overflow-x: hidden;
 transition: height .2s ease;
-
-overflow: hidden;
 }
 .card.active{
-    height: 500px;
+    height: 580px;
 }
 
 .card .formbox.login{
@@ -42,11 +42,33 @@ overflow: hidden;
     width: 100%;
     padding: 36px;
     display: flex;
+    height: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    top: 0;
+    
 
 }
+
+.card::-webkit-scrollbar {
+    width: 4px;     
+  }
+  
+  .card::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  .card::-webkit-scrollbar-thumb {
+    
+    background-color: #22AE75;    /* color of the scroll thumb */
+    border-radius: 2px;       /* roundness of the scroll thumb */
+
+  }
+
 .formbox form{
     width: 100%;
 }
@@ -83,6 +105,12 @@ overflow: hidden;
     right: 8px;
     font-size: 1.2em;
     line-height: 57px;
+}
+.inputbox>p{
+    font: 400 normal 16px/14px Inter;
+    position: absolute;
+    color: red;
+    top: 26px;
 }
 .inputbox input:focus~label, .inputbox input:valid~label{
     top: -5px;
